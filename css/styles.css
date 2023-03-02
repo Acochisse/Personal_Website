@@ -2,3 +2,8 @@ html{
     font-family: IBM Plex Mono;
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+    color: red
+}
