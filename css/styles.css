@@ -13,7 +13,8 @@ html{
     border-radius: 0%;
     border: 1px solid white;
     color: red;
-    background-color: black;
+    background-color: red;
+    text-emphasis-color: white;
 }
 
 .aco_logo {
