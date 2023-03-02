@@ -7,3 +7,10 @@ html{
     justify-content: center;
     color: red
 }
+
+.dl_button {
+    border-radius: 0%;
+    border: 1px solid white;
+    color: red;
+    background-color: black;
+}
