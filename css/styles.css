@@ -12,8 +12,7 @@ html{
 
 .social_icons {
     color: red;
-    height: 150%;
-    width: 150%;
+    padding: 15px;
 }
 
 .dl_button {
