@@ -4,9 +4,14 @@ html{
 
 .buttons {
     display: flex;
+    direction: row;
     justify-content: center;
-    color: red;
     white-space: nowrap;
+    
+}
+
+.social_icons {
+    color: red;
 }
 
 .dl_button {
