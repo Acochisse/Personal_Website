@@ -38,4 +38,5 @@ html{
     object-fit: contain;
     color: red;
     border-radius: 50%;
+    filter: grayscale(1) contrast(1.5) brightness(1);
 }
