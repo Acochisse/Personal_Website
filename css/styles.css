@@ -13,6 +13,8 @@ html{
 .social_icons {
     color: red;
     padding: 15px;
+    width: auto;
+    height: auto;
 }
 
 .dl_button {
