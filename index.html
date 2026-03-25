@@ -1,214 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/uikit.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/uikit.js"></script>
-    <script src="js/uikit-icons.js"></script>
-
-    <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Blake Stewart — Cloud FinOps Engineer specializing in cloud cost optimization, tagging governance, and spend automation across AWS and Azure." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Blake Stewart · Cloud FinOps Engineer</title>
 </head>
 <body>
-<!-- Navigation Bar -->
-    <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-    
-    <div class="uk-navbar-left">
-        <a href="" class="uk-navbar-item uk-logo uk-light">Blake_Stewart</a>
-        <img class="aco_logo uk-navbar-item uk-logo uk-light" src="assets/images/Concept1.png" alt="Logo">
+
+  <!-- ── Navbar ───────────────────────────────────────────── -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="#hero" class="navbar-brand">Blake Stewart</a>
+      <ul class="navbar-links">
+        <li><a href="#what-i-do">What I Do</a></li>
+        <li><a href="#case-study">Case Study</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="navbar-hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
     </div>
-    <div class="uk-navbar-right">
+    <nav class="navbar-mobile" id="mobile-menu">
+      <a href="#what-i-do">What I Do</a>
+      <a href="#case-study">Case Study</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-        <ul class="uk-navbar-nav uk-light">
-            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>About</a></li>
-            <li><a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll>Projects</a></li>
-            <li><a class="uk-button-text uk-text-capitalize" href="mailto:" uk-scroll>Contact</a></li>
+  <main>
 
-        </ul>
-
-    </div>
-</nav>
-<!-- Navigation Bar Ends  -->
-
-<!-- Navigation Bar Mobile -->
-<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-    
-    <div class="uk-navbar-left">
-        <a href="" class="uk-navbar-item uk-logo uk-light">Blake_Stewart</a>
-        <img class="aco_logo uk-navbar-item uk-logo uk-light" src="assets/images/Concept1.png" alt="Logo">
-    </div>
-    <div class="uk-navbar-right">
-
-        <ul class="uk-navbar-nav uk-light">
-            <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
-
-        </ul>
-
-    </div>
-</nav>
-<!-- Change This -->
-<div id="offcanvas-nav" uk-offcanvas="overlay: true">
-    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-
-        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-            <li class="uk-active"><a href="#" uk-scroll>Home</a></li>
-            <li class="uk-active"><a href="#about" uk-scroll>About</a></li>
-            <li class="uk-active"><a href="#projects" uk-scroll>Projects</a></li>
-            <li class="uk-active"><a href="mailto: lee.stewart909@gmail.com">Contact</a></li> <!--- change to ur email-->
-
-        </ul>
-
-
-
-
-    </div>
-</div>
-
-<!-- Navigation Bar Mobile Ends -->
-<!-- Home -->
-<section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-    <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">Blake Stewart</h1>
-    <div class="uk-margin-xlarge-left uk-margin-xlarge-right uk-light">
-        <p>918-510-7218 • lee.stewart909@gmail.com • <a href="https://linkedin.com/in/blake-l-stewart" target="_blank">linkedin.com/in/blake-l-stewart</a><br>
-        Tulsa, OK • <a href="https://acochisse.github.io/Personal_Website/" target="_blank">acochisse.github.io/Personal_Website</a> • <a href="https://github.com/Acochisse" target="_blank">github.com/Acochisse</a></p>
-        <h3 class="uk-text-left">Cloud FinOps Engineer</h3>
-        <p>Cloud Engineer and FinOps specialist with 1+ years of experience optimizing cloud costs across Azure and AWS platforms. Primary FinOps engineer implementing financial operations best practices and building cost management processes. Expanding into Technical Project Management through cross-functional project leadership. Strong foundation in full-stack development, infrastructure automation, and stakeholder collaboration with proven ability to drive efficiency and deliver successful outcomes.</p>
-    </div>
-</section>
-
-<!-- Home Ends -->
-<br>
-
-
-<hr class="uk-margin-xlarge-top uk-margin-xlarge-left uk-margin-xlarge-right">
-
-<!-- About Me -->
-<section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-    <h3 class="uk-margin-xlarge-left uk-light">Key Competencies</h3>
-    <ul class="uk-margin-xlarge-left uk-margin-xlarge-right">
-        <li>Cloud infrastructure management, Azure & AWS operations, Infrastructure automation</li>
-        <li>FinOps best practices, System monitoring & Troubleshooting, Cloud governance & compliance</li>
-        <li>Terraform & Python scripting, DevOps pipeline management, Cost optimization & reporting</li>
-    </ul>
-    <h3 class="uk-margin-xlarge-left uk-light">Professional Experience</h3>
-    <div class="uk-margin-xlarge-left uk-margin-xlarge-right">
-        <strong>Bank of Oklahoma Financial</strong> <span style="float:right">Oct 2023 - Present</span><br>
-        <em>Cloud FinOps Engineer</em><br>
-        <ul>
-            <li>Serve as primary FinOps engineer, implementing financial operations best practices for cloud cost optimization across Azure and AWS environments.</li>
-            <li>Build and maintain processes for cloud cost management, budgeting, and resource optimization resulting in measurable cost savings.</li>
-            <li>Develop automation scripts and operational tools using Python and Terraform for infrastructure as code.</li>
-            <li>Lead Technical Project Manager responsibilities for cross-functional projects.</li>
-            <li>Collaborate with stakeholders to establish cloud governance frameworks and cost accountability processes.</li>
-        </ul>
-        <strong>Partnered with CymStar</strong> <span style="float:right">2023</span><br>
-        <em>Front-End Web Development Lead</em><br>
-        <ul>
-            <li>Collaborated with development team to refactor and modernize legacy desktop application for instructor operator station.</li>
-            <li>Designed and implemented web-based user interface utilizing React and modern web technologies.</li>
-            <li>Successfully delivered project on time, improving accessibility and usability for end-users.</li>
-            <li>Led front-end development ensuring high-quality product delivery to engineering team.</li>
-        </ul>
-        <strong>Muncie Power Products</strong> <span style="float:right">May 2014 - Dec 2019</span><br>
-        <em>Machinist III</em><br>
-        <ul>
-            <li>Demonstrated exceptional record-keeping skills and precision manufacturing. Consistently achieved extremely precise tolerances.</li>
-            <li>Identified and resolved complex technical issues, resulting in improved efficiency and cost savings.</li>
-            <li>Trained and mentored new employees ensuring smooth knowledge transfer.</li>
-        </ul>
-    </div>
-    <h3 class="uk-margin-xlarge-left uk-light">Education & Certifications</h3>
-    <ul class="uk-margin-xlarge-left uk-margin-xlarge-right">
-        <li><strong>Software Engineer - Full Stack Web Development</strong>, Holberton School | Tulsa, OK | Jun 2020 - May 2023 | GPA: 3.6</li>
-        <li><strong>AWS Cloud Practitioner</strong>, Amazon Web Services</li>
-        <li><strong>FinOps Certified Practitioner</strong>, FinOps Foundation</li>
-    </ul>
-    <h3 class="uk-margin-xlarge-left uk-light">Technical Skills</h3>
-    <ul class="uk-margin-xlarge-left uk-margin-xlarge-right">
-        <li><strong>Cloud Platforms:</strong> Azure, AWS</li>
-        <li><strong>Infrastructure & Automation:</strong> Terraform, Terraform Cloud, CircleCI, SonarQube</li>
-        <li><strong>DevOps & CI/CD:</strong> Azure DevOps (ADO), GitLab, GitHub, BitBucket</li>
-        <li><strong>Development:</strong> JavaScript, Terraform, Python, PowerShell, Bash, YAML, JSON</li>
-    </ul>
-    <div class='buttons'>
-        <a class='social_icons' href="https://github.com/Acochisse" uk-icon="github"></a>
-        <a class='social_icons' href="https://linkedin.com/in/blake-l-stewart" uk-icon="linkedin"></a>
-    </div>
-    <div>
-        <img class="profile_image" src="assets/images/Profile.jpeg" alt="Profile Picture">
-    </div>
-</section>
-
-<!-- Projects Section -->
-<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
-<section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-<h3 class="uk-margin-xlarge-left uk-light">Projects</h3>
-<p class="uk-margin-xlarge-left">Projects that I've been working on</p>
-
-<div class="uk-margin-xlarge-left uk-margin-xlarge-right">
-    <!-- Change all of this to ur projects -->
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
-        <h4>Holberton Web Instructor/Operator Station</h4>
-        <p>Collaborated with a team of developers to refactor and modernize a legacy desktop application currently in use for an instructor operator station.
-            Designed and implemented a web-based user interface for the application, utilizing modern web technologies such as Figma and React,.
-            Successfully delivered the project on time, resulting in increased accessibility and usability of the instructor operator station for end-users.
-            Technologies: Figma, React, JavaScript</p>
-        <a class="uk-button-text uk-text-decoration-none" href="https://github.com/Acochisse/Web-IOS">
-            <span uk-icon="icon: link">
-            </span> Website Link </a>
-        </div>
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
-        <h4>Recreation of AirBnB</h4>
-        <p>Implemented a duplicate version of AirBnB using Python and Flask
-            Created a full-stack web application by creating two servers and a load balancer to handle traffic and maintain a backup in case of a fault in one server.
-            This system allows for users to search for rooms by location or amenities.
-            Technologies: Python, Flask, Puppet</p>
-        <a class="uk-button-text uk-text-decoration-none" href="https://github.com/Acochisse/AirBnB_clone_v3">
-            <span uk-icon="icon: link">
-            </span> Website Link </a>
-        </div>
-        <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
-            <h4>Server Files Manager</h4>
-            <p>Delivered a files management system from the ground up in JavaScript by working closely with a partner.
-                Implemented a User Identification system so files could be listed as private or public and be secure.
-                Generated a system that allows users to search by User ID or by filename.
-                Technologies: JavaScript</p>
-            <a class="uk-button-text uk-text-decoration-none" href="Https://github.com/Acochisse/holbertonschool-files_manager">
-                <span uk-icon="icon: link">
-                </span> Website Link </a>
-            </div>
-        <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
-            <h4>Recreation of Printf</h4>
-            <p>Collaborated with a partner to develop a plan to manage project responsibilities for each team member.
-                Dispatched a clone of the Linux shell built-in printf with flag functionality so users could use the program exactly as they would with the built-in.
-                Technologies: C, Bash</p>
-            <a class="uk-button-text uk-text-decoration-none" href="Https://github.com/Acochisse/printf">
-                <span uk-icon="icon: link">
-                </span> Website Link </a>
-            </div></div>
-
-
-
-    <br>
-
-
-</section>
-<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
-</div>
-<!-- Projects Section Ends -->
-<!-- Resume Section -->
-
-<section id="resume" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-    <div class="uk-margin-xlarge-top">
-        <h3 class="uk-margin-xlarge-left uk-light">Resume</h3>
-        <div class="uk-margin-xlarge-left uk-margin-xlarge-right uk-card uk-card-secondary uk-card-body">
-        <p>Click <a href="assets/resume/resume.pdf" target="_blank">here</a> to view my resume in the browser or click below to download a copy.</p>
-        <button class="dl_button"><a href="assets/resume/resume.pdf" download="BlakeStewartResume" >Download</a></button>
+    <!-- ── Hero ─────────────────────────────────────────────── -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <p class="hero-eyebrow">Cloud FinOps Engineer</p>
+        <h1 class="hero-name">Blake Stewart</h1>
+        <p class="hero-headline">
+          Reduced unallocated cloud spend by 94%&nbsp;<span class="hero-stat">($91k → $5.2k)</span> in 3 months.
+        </p>
+        <p class="hero-sub">
+          I work at the intersection of cloud engineering, financial governance, and automation —
+          turning raw cloud spend data into clear cost accountability and measurable savings.
+        </p>
+        <div class="hero-actions">
+          <a href="#case-study" class="btn btn-primary">See the Case Study</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
         </div>
       </div>
+    </section>
 
-    
+    <!-- ── What I Do ─────────────────────────────────────────── -->
+    <section id="what-i-do" class="section">
+      <div class="container">
+        <h2 class="section-title">What I Do</h2>
+        <div class="cards-grid">
+          <div class="card">
+            <h3 class="card-title">Cloud Cost Optimization</h3>
+            <p class="card-body">Identify and eliminate wasteful spend across AWS and Azure — right-sizing, reserved capacity planning, and idle resource cleanup.</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Cost Allocation &amp; Tagging Strategy</h3>
+            <p class="card-body">Design and enforce tagging governance frameworks that give every dollar a business owner and a cost center.</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Governance &amp; Spend Controls</h3>
+            <p class="card-body">Implement budget policies, approval workflows, and guardrails that prevent runaway spend before it hits the invoice.</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Reporting &amp; Anomaly Detection</h3>
+            <p class="card-body">Build automated dashboards and alerting pipelines that surface cost anomalies and chargeback/showback reports to stakeholders.</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Cloud Operations (AWS &amp; Azure)</h3>
+            <p class="card-body">Day-to-day cloud engineering support — infrastructure automation with Terraform, pipeline management, and incident response.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Case Study ────────────────────────────────────────── -->
+    <section id="case-study" class="section section-alt">
+      <div class="container">
+        <p class="section-eyebrow">Featured Case Study</p>
+        <h2 class="section-title">Reducing Unallocated Cloud Spend by 94%</h2>
+        <p class="section-lead">Bank of Oklahoma Financial (BOKF) · Cloud FinOps Engineer · Oct 2023 – Present</p>
+        <div class="case-blocks">
+          <div class="case-block">
+            <h3 class="case-label">Problem</h3>
+            <div class="case-content">
+              Unallocated cloud spend had grown to ~$91,000 in December — representing costs with no business owner,
+              no cost center, and no visibility. Leadership had limited ability to hold teams accountable or forecast accurately.
+            </div>
+          </div>
+          <div class="case-block">
+            <h3 class="case-label">Approach</h3>
+            <div class="case-content">
+              <ul class="case-list">
+                <li>Deployed and configured <strong>Apptio Cloudability</strong> as the primary FinOps platform.</li>
+                <li>Designed and enforced a company-wide <strong>tagging and cost allocation governance</strong> framework.</li>
+                <li>Worked cross-functionally with application and infrastructure teams to close tagging gaps.</li>
+                <li>Automated reporting and alerting workflows to surface anomalies and untagged resource spikes in near real-time.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="case-block">
+            <h3 class="case-label">Result</h3>
+            <div class="case-content">
+              Unallocated cloud spend dropped from <strong>~$91,000 in December</strong> to <strong>~$5,200 in March</strong> —
+              a <strong>94% reduction in 3 months</strong>. Every dollar now has a business owner, enabling accurate chargeback,
+              forecasting, and ongoing spend accountability.
+            </div>
+          </div>
+          <div class="case-block">
+            <h3 class="case-label">Tools Used</h3>
+            <div class="case-content">
+              <div class="tools-grid">
+                <span class="tool-tag">Apptio Cloudability</span>
+                <span class="tool-tag">Microsoft Azure</span>
+                <span class="tool-tag">AWS</span>
+                <span class="tool-tag">Tagging Governance Controls</span>
+                <span class="tool-tag">Reporting Automation</span>
+                <span class="tool-tag">Budget Alerting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Skills ────────────────────────────────────────────── -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div>
+            <h3 class="skill-category-title">Cloud Platforms</h3>
+            <ul class="skill-list">
+              <li class="skill-item">AWS</li>
+              <li class="skill-item">Microsoft Azure</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="skill-category-title">FinOps &amp; Cost Management</h3>
+            <ul class="skill-list">
+              <li class="skill-item">Apptio Cloudability</li>
+              <li class="skill-item">Tagging Strategy &amp; Governance</li>
+              <li class="skill-item">Chargeback / Showback</li>
+              <li class="skill-item">Budgeting &amp; Forecasting Controls</li>
+              <li class="skill-item">Anomaly Detection</li>
+              <li class="skill-item">Cost Allocation Frameworks</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="skill-category-title">Infrastructure &amp; Automation</h3>
+            <ul class="skill-list">
+              <li class="skill-item">Terraform</li>
+              <li class="skill-item">Terraform Cloud</li>
+              <li class="skill-item">Python</li>
+              <li class="skill-item">PowerShell</li>
+              <li class="skill-item">Bash</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="skill-category-title">DevOps &amp; Tooling</h3>
+            <ul class="skill-list">
+              <li class="skill-item">Azure DevOps</li>
+              <li class="skill-item">GitHub</li>
+              <li class="skill-item">GitLab</li>
+              <li class="skill-item">Bitbucket</li>
+              <li class="skill-item">CircleCI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Contact ───────────────────────────────────────────── -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-lead">Open to FinOps, Cloud Financial Operations, and Cloud Engineering roles. Feel free to reach out directly.</p>
+        <div class="contact-links">
+          <a href="mailto:lee.stewart909@gmail.com" class="contact-link">
+            <span class="contact-icon">✉</span>
+            lee.stewart909@gmail.com
+          </a>
+          <a href="https://linkedin.com/in/blake-l-stewart" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <span class="contact-icon">in</span>
+            linkedin.com/in/blake-l-stewart
+          </a>
+          <a href="https://github.com/Acochisse" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <span class="contact-icon">gh</span>
+            github.com/Acochisse
+          </a>
+          <a href="assets/resume/resume.pdf" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <span class="contact-icon">↓</span>
+            Download Resume (PDF)
+          </a>
+        </div>
+        <p class="footer-note">Tulsa, OK · Available for remote roles</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // Navbar scroll shadow
+    var navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 20) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    var hamburger = document.getElementById('hamburger');
+    var mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', function () {
+      var isOpen = mobileMenu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Close mobile menu and smooth-scroll on link click
+    document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+      anchor.addEventListener('click', function (e) {
+        var href = anchor.getAttribute('href');
+        var target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          mobileMenu.classList.remove('open');
+          hamburger.setAttribute('aria-expanded', 'false');
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
